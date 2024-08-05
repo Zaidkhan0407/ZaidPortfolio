@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid-Khan-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(2, 46, 46);
+            color: antiquewhite;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(10, 26, 26);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(161, 101, 22);
+        }
+
+        .left a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        .left a:hover {
+            color: rgb(161, 101, 22);
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 70px;
+        }
+
+        .rightsection img {
+            width: 100%;
+        }
+
+        .green {
+            color: rgb(0, 255, 153);
+        }
+
+        #element {
+            color: rgba(165, 14, 173, 0.868);
+        }
+
+        section {
+            padding: 50px;
+            margin: 20px 0;
+        }
+        .about{
+            background-color: rgb(10, 26, 26);
+            border-radius: 10px;
+            
+        }
+        .about p{
+            font-size: 1.55rem;
+            justify-content: center;
+        }
+        .projects{
+            background-color: rgb(10, 26, 26);
+            border-radius: 10px;
+            font-size: 1.21rem;
+        }
+        .contact {
+            
+            margin: auto;
+            background-color: rgb(10, 26, 26);
+            border-radius: 10px;
+            padding: 20px;
+
+        }
+        .contact a{
+            color:azure;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 1.67rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left"><a href="#home">Zaid's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                Hi, my name is <span class="green">Zaid</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="bglogo">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I am a dedicated software developer with a strong passion for technology and innovation. I specialize in creating efficient and scalable web applications and have a keen interest in machine learning and data analysis. I'm always looking to push boundaries, explore new ideas, and collaborate with like-minded individuals. Let's connect and explore how we can create something amazing together!</p>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Brain Tumor Detection Using DeepLearning: <a href="https://github.com/Zaidkhan0407/BrainTumorDetectionUsingDeeplearning">Project Link</a></li>
+                <li>Titanic Classification: <a href="https://github.com/Zaidkhan0407/TitanicSurvivalPrediction">Project Link</a></li>
+                <li>Virtual Desktop Assistant: <a href="https://github.com/Zaidkhan0407/Virtual_Desktop_Assistance">Project Link</a></li>
+            </ul>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via email at <a href="mailto:zaidk.051103@gmail.com">zaidk.051103@gmail.com</a> or connect with me on LinkedIn.</p>
+        </section>
+
+    </main>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Prompt Expert', 'Data Analyst'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
